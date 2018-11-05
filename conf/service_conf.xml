@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+    <service name="/login.loginService"
+             proto-name="loginService.proto"
+             handler-interface="local/sndaRpc/pb/login/LoginServiceServer"
+             handler-class="local/sndaRpc/service/login/TestService">
+        <method name="login" request-type="login.loginRequest" response-type="login.loginReply"/>
+        <method name="logout" request-type="login.logoutRequest" response-type="login.logoutReply"/>
+    </service>
+
+
+    <service name="/common.commonService"
+             proto-name="common.proto"
+             handler-interface="local/sndaRpc/pb/common/CommonServiceServer"
+             handler-class="local/sndaRpc/service/common/CommonService">
+        <method name="appInfo" request-type="common.appInfoRequest" response-type="common.appInfoReply"/>
+    </service>
+
+
+
+</config>

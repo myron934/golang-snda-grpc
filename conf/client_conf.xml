@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <client name="serv">
+        <addr>127.0.0.1:8081</addr>
+        <addr>127.0.0.1:8081</addr>
+        <addr>127.0.0.1:8081</addr>
+        <interface name="/login.loginService/login" request-type="login.loginRequest" response-type="login.loginReply"/>
+        <interface name="/login.loginService/logout" request-type="login.logoutRequest" response-type="login.logoutReply"/>
+        <interface name="/common.commonService/appInfo" request-type="common.appInfoRequest" response-type="common.appInfoReply"/>
+    </client>
+
+
+
+</config>

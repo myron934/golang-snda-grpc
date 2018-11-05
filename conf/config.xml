@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <include>conf/service_conf.xml</include>
+    <include>conf/client_conf.xml</include>
+    <include>conf/cache_conf.xml</include>
+    <include>conf/db_conf.xml</include>
+    <include>conf/http_conf.xml</include>
+    
+</config>

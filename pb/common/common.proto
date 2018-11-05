@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package common;
+option go_package = "common";
+
+service commonService {
+  rpc appInfo (appInfoRequest) returns (appInfoReply) {}
+}
+
+message appInfoRequest {
+  int32 srcCode = 1;
+}
+
+message appInfoReply {
+  string appName = 1;
+  string version = 2;
+}

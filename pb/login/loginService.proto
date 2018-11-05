@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package login;
+option go_package = "login";
+
+service loginService {
+  rpc login (loginRequest) returns (loginReply) {}
+
+  rpc logout (logoutRequest) returns (logoutReply) {}
+}
+
+message loginRequest {
+  string userName = 1;
+  string password = 2;
+}
+
+message loginReply {
+  string sessionId = 1;
+  string err = 2;
+}
+
+message logoutRequest {
+  string sessionId = 1;
+}
+
+message logoutReply {
+  string err = 2;
+}

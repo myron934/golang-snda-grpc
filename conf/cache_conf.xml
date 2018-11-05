@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+    <redis name="redis1" passwd="" poolsize="0">
+        <addr>127.0.0.1:11511</addr>
+		<addr>127.0.0.1:11511</addr>
+    </redis>
+
+
+</config>

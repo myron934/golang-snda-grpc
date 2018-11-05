@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+    <http>
+        <interface name="/login" method="/login.loginService/login"></interface>
+        <interface name="/logout" method="/login.loginService/logout"></interface>
+        <interface name="/appInfo" method="/common.commonService/appInfo"></interface>
+    </http>
+
+
+</config>
